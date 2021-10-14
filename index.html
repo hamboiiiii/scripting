@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<head>
+<style>
+	body{
+	margin:100px;
+	padding:0;
+	background-color:#8b0000
+}
+
+/* Oswald font */
+@font-face{
+	font-family:'Oswald';
+	src:url("fonts/Oswald-VariableFont_wght.ttf");
+}
+
+/* Header font */
+.title-text{
+	color:white;
+	font-family:'Oswald';
+	background:#8B0000;
+	font-size:125px;
+	text-shadow:0px 0px 10px black;
+}
+
+/* Link text */
+.link-text1{
+	font-family:'Oswald';
+	background-color:white;
+	font-size:30px;
+	padding:10px;
+	color:darkred;
+}
+.link-text2{
+	font-family:'Oswald';
+	background-color:white;
+	font-size:30px;
+	padding:10px;
+	color:darkred;
+}
+.link-text3{
+	font-family:'Oswald';
+	background-color:white;
+	font-size:30px;
+	padding:10px;
+	color:darkred;
+}
+.link-text1:hover{
+	background-color:red;
+	transition:0.4s;
+	box-shadow:0px 0px 25px black;
+	color:white;
+}
+.link-text2:hover{
+	background-color:red;
+	transition:0.4s;
+	box-shadow:0px 0px 25px black;
+	color:white;
+}
+.link-text3:hover{
+	background-color:red;
+	transition:0.4s;
+	box-shadow:0px 0px 25px black;
+	color:white;
+}
+/* Contact font */
+.contact-text{
+	color:white;
+	font-family:'Oswald';
+	transform:translateY(1500%);
+	text-shadow:0px 0px 5px black;
+}
+
+/* Cropping for the slideshow images */
+.slidershow{
+	width:400px;
+	height:400px;
+	overflow:hidden;
+	border-style:solid;
+	border-width:20px;
+	border-radius:50px;
+	border-color:white;
+	padding:20px;
+	padding-bottom:50px;
+	padding-top:30px;
+	background-color:red;
+	box-shadow:0px 0px 15px black;
+}
+
+/* Text for example header */
+.example-text{
+	color:white;
+	font-size:35px;
+	font-family:'Oswald';
+	transform: translate(5%,100%);
+	text-shadow:0px 0px 15px black;
+}
+
+/* Positioning for slideshow */
+.middle{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, 55%);
+}
+
+/* Image navigation */
+.navigation{
+	position:absolute;
+	bottom:-100px;
+	left:50%;
+	transform:translateX(-50%);
+	display:inline-flex;
+}
+
+/* Bar progress indicators */
+.bar{
+	width:10px;
+	height:10px;
+	transform:translateY(1950%);
+	background:white;
+	margin:7px;
+	cursor:pointer;
+	transition:0.4s;
+	box-shadow:0px 0px 15px black;
+}
+
+/* Mouse over bar colour change */
+.bar:hover{
+	background:red;
+}
+
+/* Slides input */
+input[name="r"]{
+	position:absolute;
+	visibility:hidden;
+}
+
+/* All slides size */
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+
+/* Space and time between slides */
+.slide{
+	width: 20%;
+	transition: 1s;
+	
+}
+
+/* Size of the slides */
+.slide img{
+	width:absolute;
+	height:100%;
+	
+}
+
+/* Percent each slide moves over */
+#r1:checked ~ .s1{
+	margin-left:1.5%;
+}
+#r2:checked ~ .s1{
+	margin-left:-20%;
+}
+#r3:checked ~ .s1{
+	margin-left:-40%;
+}
+#r4:checked ~ .s1{
+	margin-left:-60%;
+}
+#r5:checked ~ .s1{
+	margin-left:-80%;
+}
+
+</style>
+<!--Tab Title-->
+	<title>Hamboiiiii</title>
+
+</head>
+
+<body>
+
+<!--Title Header-->
+<p>
+	<div class="title-text" style="text-align:center"><u>Hamboiiiii</u></div><br>
+</p>
+
+<!--Links to Other Pages-->
+<div>
+<p>
+	<div style="text-align:center"><a class="link-text1" href="https://sites.google.com/view/hamboiiiii/home/illustrated-horror-collection" style="text-decoration-line:none"><q>Illustrated Horror</q> Collection</a><br>
+	<br>
+	<br>
+	<a class="link-text2" href="https://sites.google.com/view/hamboiiiii/home/one-off-collection" style="text-decoration-line:none"><q>One Off</q> Collection</a><br>
+	<br>
+	<br>
+	<a class="link-text3" href="https://sites.google.com/view/hamboiiiii/home/lo-fi-collection" style="text-decoration-line:none"><q>Lo-Fi</q> Collection</a></div>
+</p>
+</div>
+
+<!--Subtitle Header-->
+<p> 
+	<div class="example-text"><b><u>A few examples of what I have to offer...</u></b><br></div>
+	
+<!--Slideshow Middle-->
+	<div class="slidershow middle">
+		
+<!--Slides-->
+    <div class="slides">
+    <input type="radio" name="r" id="r1" checked>
+    <input type="radio" name="r" id="r2">
+    <input type="radio" name="r" id="r3">
+    <input type="radio" name="r" id="r4">
+    <input type="radio" name="r" id="r5">
+
+    <div class="slide s1">
+    <img src="images/bigboy.png" alt="Big Boy">
+    </div>
+    <div class="slide">
+    <img src="images/Beelzebub.png" alt="Beelzebub">
+    </div>
+    <div class="slide">
+    <img src="images/kirby.png" alt="KIRBY">
+    </div>
+    <div class="slide">
+    <img src="images/hamboiiiii.png" alt="Hamboiiiii Logo">
+    </div>
+	<div class="slide">
+    <img src="images/umbrella.png" alt="UMBRELLA">
+    </div>
+    </div>
+    </div>
+<!--Navigation-->
+    <div class="navigation">
+    <label for="r1" class="bar"></label>
+    <label for="r2" class="bar"></label>
+    <label for="r3" class="bar"></label>
+    <label for="r4" class="bar"></label>
+	<label for="r5" class="bar"></label>
+	</div>
+</p>
+<p>
+	<div class="contact-text">
+	<u>Contact Information:</u><br>
+		Email: Trey2292@outlook.com
+	</div>
+</p>
+</body>
+</html>
