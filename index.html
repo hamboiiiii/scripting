@@ -1,252 +1,56 @@
 <!doctype html>
 <html>
-<meta charset="utf-8">
 <head>
+<meta charset="utf-8">
+<!-- Oswald Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
 <style>
+	.title-text{
+		font-family:'Oswald';
+		color:white;
+		text-align:center;
+		font-size:50px;
+	}
+
 	body{
-	margin:100px;
-	padding:0;
-	background-color:#8b0000
-}
+		background-color:darkred;
+	}
 
-/* Oswald font */
-@font-face{
-	font-family:'Oswald';
-	src:url("fonts/Oswald-VariableFont_wght.ttf");
-}
+	.flex-container{
+		display:flex;
+		align-items:stretch;
+	}
 
-/* Header font */
-.title-text{
-	color:white;
-	font-family:'Oswald';
-	background:#8B0000;
-	font-size:125px;
-	text-shadow:0px 0px 10px black;
-}
-
-/* Link text */
-.link-text1{
-	font-family:'Oswald';
-	background-color:white;
-	font-size:30px;
-	padding:10px;
-	color:darkred;
-}
-.link-text2{
-	font-family:'Oswald';
-	background-color:white;
-	font-size:30px;
-	padding:10px;
-	color:darkred;
-}
-.link-text3{
-	font-family:'Oswald';
-	background-color:white;
-	font-size:30px;
-	padding:10px;
-	color:darkred;
-}
-.link-text1:hover{
-	background-color:red;
-	transition:0.4s;
-	box-shadow:0px 0px 25px black;
-	color:white;
-}
-.link-text2:hover{
-	background-color:red;
-	transition:0.4s;
-	box-shadow:0px 0px 25px black;
-	color:white;
-}
-.link-text3:hover{
-	background-color:red;
-	transition:0.4s;
-	box-shadow:0px 0px 25px black;
-	color:white;
-}
-/* Contact font */
-.contact-text{
-	color:white;
-	font-family:'Oswald';
-	transform:translateY(1500%);
-	text-shadow:0px 0px 5px black;
-}
-
-/* Cropping for the slideshow images */
-.slidershow{
-	width:400px;
-	height:400px;
-	overflow:hidden;
-	border-style:solid;
-	border-width:20px;
-	border-radius:50px;
-	border-color:white;
-	padding:20px;
-	padding-bottom:50px;
-	padding-top:30px;
-	background-color:red;
-	box-shadow:0px 0px 15px black;
-}
-
-/* Text for example header */
-.example-text{
-	color:white;
-	font-size:35px;
-	font-family:'Oswald';
-	transform: translate(5%,100%);
-	text-shadow:0px 0px 15px black;
-}
-
-/* Positioning for slideshow */
-.middle{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%, 55%);
-}
-
-/* Image navigation */
-.navigation{
-	position:absolute;
-	bottom:-100px;
-	left:50%;
-	transform:translateX(-50%);
-	display:inline-flex;
-}
-
-/* Bar progress indicators */
-.bar{
-	width:10px;
-	height:10px;
-	transform:translateY(1950%);
-	background:white;
-	margin:7px;
-	cursor:pointer;
-	transition:0.4s;
-	box-shadow:0px 0px 15px black;
-}
-
-/* Mouse over bar colour change */
-.bar:hover{
-	background:red;
-}
-
-/* Slides input */
-input[name="r"]{
-	position:absolute;
-	visibility:hidden;
-}
-
-/* All slides size */
-.slides{
-	width: 500%;
-	height: 100%;
-	display: flex;
-}
-
-/* Space and time between slides */
-.slide{
-	width: 20%;
-	transition: 1s;
+	.flex-container div{
+		background-color:red;
+		margin:10px;
+		padding:20px;
+		text-align:center;
+	}
 	
-}
-
-/* Size of the slides */
-.slide img{
-	width:absolute;
-	height:100%;
+	@media (max-width:800px){
+			.flex-container{
+				flex-direction:column;
+			}
 	
-}
-
-/* Percent each slide moves over */
-#r1:checked ~ .s1{
-	margin-left:1.5%;
-}
-#r2:checked ~ .s1{
-	margin-left:-20%;
-}
-#r3:checked ~ .s1{
-	margin-left:-40%;
-}
-#r4:checked ~ .s1{
-	margin-left:-60%;
-}
-#r5:checked ~ .s1{
-	margin-left:-80%;
-}
-
+	#item1{
+		flex:25%
+	}
+	
 </style>
-<!--Tab Title-->
-	<title>Hamboiiiii</title>
+
+<!-- Tab Title -->
+	<title>Trey Tymensen</title>
 
 </head>
 
 <body>
-
-<!--Title Header-->
+	<header class="title-text"><h1>Hamboiiiii</h1></header>
 <p>
-	<div class="title-text" style="text-align:center"><u>Hamboiiiii</u></div><br>
-</p>
-
-<!--Links to Other Pages-->
-<div>
-<p>
-	<div style="text-align:center"><a class="link-text1" href="https://sites.google.com/view/hamboiiiii/home/illustrated-horror-collection" style="text-decoration-line:none"><q>Illustrated Horror</q> Collection</a><br>
-	<br>
-	<br>
-	<a class="link-text2" href="https://sites.google.com/view/hamboiiiii/home/one-off-collection" style="text-decoration-line:none"><q>One Off</q> Collection</a><br>
-	<br>
-	<br>
-	<a class="link-text3" href="https://sites.google.com/view/hamboiiiii/home/lo-fi-collection" style="text-decoration-line:none"><q>Lo-Fi</q> Collection</a></div>
-</p>
-</div>
-
-<!--Subtitle Header-->
-<p> 
-	<div class="example-text"><b><u>A few examples of what I have to offer...</u></b><br></div>
-	
-<!--Slideshow Middle-->
-	<div class="slidershow middle">
-		
-<!--Slides-->
-    <div class="slides">
-    <input type="radio" name="r" id="r1" checked>
-    <input type="radio" name="r" id="r2">
-    <input type="radio" name="r" id="r3">
-    <input type="radio" name="r" id="r4">
-    <input type="radio" name="r" id="r5">
-
-    <div class="slide s1">
-    <img src="images/bigboy.png" alt="Big Boy">
-    </div>
-    <div class="slide">
-    <img src="images/Beelzebub.png" alt="Beelzebub">
-    </div>
-    <div class="slide">
-    <img src="images/kirby.png" alt="KIRBY">
-    </div>
-    <div class="slide">
-    <img src="images/hamboiiiii.png" alt="Hamboiiiii Logo">
-    </div>
-	<div class="slide">
-    <img src="images/umbrella.png" alt="UMBRELLA">
-    </div>
-    </div>
-    </div>
-<!--Navigation-->
-    <div class="navigation">
-    <label for="r1" class="bar"></label>
-    <label for="r2" class="bar"></label>
-    <label for="r3" class="bar"></label>
-    <label for="r4" class="bar"></label>
-	<label for="r5" class="bar"></label>
-	</div>
-</p>
-<p>
-	<div class="contact-text">
-	<u>Contact Information:</u><br>
-		Email: Trey2292@outlook.com
-	</div>
+	<div class="flex-container"><div id="item1">aaaaaaaaaaa</div></div>
 </p>
 </body>
 </html>
