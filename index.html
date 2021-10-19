@@ -1,56 +1,140 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<!-- Oswald Font-->
+<meta charset="UTF-8">
+<title>Trey Tymensen</title>
+	
+	<!-- Oswald Font-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
-<style>
-	.title-text{
-		font-family:'Oswald';
-		color:white;
-		text-align:center;
-		font-size:50px;
-	}
-
-	body{
-		background-color:darkred;
-	}
-
-	.flex-container{
-		display:flex;
-		align-items:stretch;
-	}
-
-	.flex-container div{
-		background-color:red;
-		margin:10px;
-		padding:20px;
-		text-align:center;
-	}
+<!-- Lobster Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	
-	@media (max-width:800px){
+	<style>
+
+		/* Responsive view for mobile devices */
+				
+		body{
+			font-family:'Lobster';
+			font-size:20px;
+			background-image:url("images/bigboy_web.gif");
+			margin-left:100px;
+			margin-right:100px;
+		}
+		
+		/* Aligns header with window size */
+		header{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		header h1{
+			font-size:150px;
+			font-family: 'Oswald';
+			color:white;
+			text-shadow: 0px 0px 15px black;
+		}
+		
+		/* Aligns Content with window size */
+		.flex-container{
+			display:flex;
+			align-items:center;
+			color: white;
+			
+		}
+		
+		/* Flex container top row */
+		.flex-container div1{
+			background-color:red;
+			margin-right:10px;
+			margin-bottom: 50px;
+			padding:30px;
+			box-shadow: 0px 0px 25px 5px black
+		}
+		.flex-container div1:hover{
+			background-color:white;
+			color:red;
+			margin-right:10px;
+			margin-bottom: 50px;
+			transition:0.5s;
+			padding:30px;
+			box-shadow: 0px 0px 25px 5px black
+		}
+		
+		/* Flex container for intro image */
+		.flex-container div2{
+			margin:10px;
+			padding:20px;
+		}
+		footer{
+			text-align:center;
+			font-family:'Oswald';
+			font-size:15px;
+			color:white;
+			text-shadow: 0px 0px 10px black;
+		}
+		/* Responsive layout for mobile devices (two columns to one column.) */
+		@media (max-width:1300px){
 			.flex-container{
 				flex-direction:column;
 			}
-	
-	#item1{
-		flex:25%
-	}
-	
-</style>
+		}
+		#item1{
+			flex:75%;
+			
+		}
+		
+		#item2 img{
+			width:100%;
+		}
+		#item2{
+			flex:25%
+		}
+		#item3{
+			flex:25%
+		}
+		#item4{
+			flex:75%
+		}
+		#item5{
+			flex:75%
+		}
+		#item6{
+			flex:25%
+		}
+		#item7{
+			flex:25%
+		}
+		#item8{
+			flex:75%
+		}
 
-<!-- Tab Title -->
-	<title>Trey Tymensen</title>
-
+	</style>
 </head>
 
 <body>
-	<header class="title-text"><h1>Hamboiiiii</h1></header>
-<p>
-	<div class="flex-container"><div id="item1">aaaaaaaaaaa</div></div>
-</p>
+	
+<header>
+	<h1>Hamboiiiii</h1>
+</header>
+	<p><div class="flex-container"><div1 id="item1">
+		Trey Tymensen is a student at the Lethbridge College in the Multimedia Production program as well as a freelance graphic designer and content creator, and has been creating content and designs for around 7 years. The first sale he made of a design led him to pursue work selling small designs to businesses and people around his small town of Coaldale, Alberta. He had worked for multiple different businesses, such as AirTech Heating and Air-Conditioning as well as Live Electric, in both cases working as a labourer. After his time as a labourer he moved on to carpentry at All Things Cedar in Lethbridge, Alberta. He was dissatisfied with the work he was doing, so when he got out of high school he immediately enrolled in the Multimedia Production program at the Lethbridge College.</div1><div2><img id="item2 img" src="images/hamboiiiii_web.png" alt="Hamboiiiii Logo"></div2></div>
+	</p>
+	<p><div class="flex-container"><div2 id="item3">
+		<img src="images/scream_web.jpg" alt="Screaming"></div2><div1 id="item4">He started high school in 2018, and had ended up creating a few designs for the school such as coach uniforms, advertisements for events and services, as well as the 2021 graduation program. He graduated with honours the same year he designed the graduation program, and had also won the Personality Award as well as the Billy Derochie Memorial Scholarship. He also started at the Lethbridge College that year as well, and has been studying there since.</div1></div>
+	</p>
+	<p><div class="flex-container"><div1 id="item5">
+		He had started working with Adobe products since 2013 after watching content creators play with the program for fun. His brother James Tymensen taught him the basics of colour blending, selection, spot removal, as well as other ways of messing around with the program. This led to Trey going on to practice with Photoshop exclusively for years, until he got into a video and image editing module in his middle school, St. Joseph School. He furthered his education by taking new media as well as art classes in high school. During his years of education though, he had also picked on many different Adobe programs such as Premiere, Animator (formerly Flash), and After Effects.</div1><div2 id="item6"><a href="https://www.redbubble.com/people/hamboiiiii/works/52875741-the-stretched-man?asc=u"><img src="images/umbrella_web.png" alt="The Stretched Man"></a></div2></div>
+	</p>
+	<p><div class="flex-container"><div2 id="item7">
+		<a href="https://www.redbubble.com/people/hamboiiiii/works/44327606-beelzebub?asc=u"><img src="images/beelzebub_web.png" alt="Beelzebub"></a></div2><div1 id="item8">Learning more about video editing had led him to amateur content creation on YouTube. He started creating videos in 2019, focusing on comedic, personality-based content. He had no specific genre he worked in, he just simply made what he wanted to make online. During high school he created quite a bit of content for his classes, as well as a food safety training video produced for his culinary class, which was repurposed as educational material for later culinary classes.</div1></div></p>
+<footer>
+	<p>Created by Trey Tymensen</p>
+	<p>&copy; 2021</p>
+</footer>
 </body>
 </html>
