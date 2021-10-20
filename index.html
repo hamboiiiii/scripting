@@ -15,8 +15,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	
 	<style>
-
-		/* Responsive view for mobile devices */
 				
 		body{
 			font-family:'Lobster';
@@ -28,47 +26,94 @@
 		
 		/* Aligns header with window size */
 		header{
+			text-align:center;
+			background-color:red;
 			display:flex;
 			align-items:center;
 			justify-content:center;
-		}
-		header h1{
-			font-size:150px;
+			margin:150px;
+			box-shadow: 0px 0px 25px 5px black;
+			font-size:70px;
 			font-family: 'Oswald';
 			color:white;
 			text-shadow: 0px 0px 15px black;
+		}
+		header:hover{
+			transition:0.5s;
+			background-color:white;
+			color:red;
+		}
+		
+		/* Button decoration */
+		button{
+			background:red;
+			border:none;
+			padding:100px;
+			margin:5px;
+			font-family:'Oswald';
+			font-size:50px;
+			box-shadow: 0px 0px 25px 5px black;
+			color:white;
+		}
+		button:hover{
+			transition:0.5s;
+			background:white;
+			color:red;
 		}
 		
 		/* Aligns Content with window size */
 		.flex-container{
 			display:flex;
+			justify-content:center;
 			align-items:center;
 			color: white;
-			
 		}
 		
-		/* Flex container top row */
+		/* Flex container div1*/
 		.flex-container div1{
 			background-color:red;
 			margin-right:10px;
 			margin-bottom: 50px;
-			padding:30px;
+			padding:20px;
 			box-shadow: 0px 0px 25px 5px black
 		}
 		.flex-container div1:hover{
 			background-color:white;
 			color:red;
-			margin-right:10px;
-			margin-bottom: 50px;
 			transition:0.5s;
-			padding:30px;
-			box-shadow: 0px 0px 25px 5px black
 		}
 		
-		/* Flex container for intro image */
+		/* Flex container div2 */
+		.flex-container div2:hover{
+			background-image:url("images/blood_splat_alt.png");
+			transition:0.5s;
+		}
 		.flex-container div2{
 			margin:10px;
-			padding:20px;
+			padding:80px;
+			background-image:url("images/blood_splat.png");
+		}
+		
+		/* Flex container div3 */
+		.flex-container div3:hover{
+			background-image:url("images/blood_splat_alt_2.png");
+			transition:0.5s;
+		}
+		.flex-container div3{
+			margin:10px;
+			padding:80px;
+			background-image:url("images/blood_splat.png");
+		}
+		
+		/* Flex container div4 */
+		.flex-container div4:hover{
+			margin-right:10px;
+			transition:0.5s;
+			padding:80px;
+		}
+		.flex-container div4{
+			margin:10px;
+			padding:80px;
 		}
 		footer{
 			text-align:center;
@@ -77,7 +122,8 @@
 			color:white;
 			text-shadow: 0px 0px 10px black;
 		}
-		/* Responsive layout for mobile devices (two columns to one column.) */
+		
+		/* Alignment for mobile */
 		@media (max-width:1300px){
 			.flex-container{
 				flex-direction:column;
@@ -85,11 +131,6 @@
 		}
 		#item1{
 			flex:75%;
-			
-		}
-		
-		#item2 img{
-			width:100%;
 		}
 		#item2{
 			flex:25%
@@ -112,6 +153,15 @@
 		#item8{
 			flex:75%
 		}
+		#item9{
+			flex:25%
+		}
+		#item10{
+			flex:25%
+		}
+		#item11{
+			flex:25%
+		}
 
 	</style>
 </head>
@@ -122,17 +172,20 @@
 	<h1>Hamboiiiii</h1>
 </header>
 	<p><div class="flex-container"><div1 id="item1">
-		Trey Tymensen is a student at the Lethbridge College in the Multimedia Production program as well as a freelance graphic designer and content creator, and has been creating content and designs for around 7 years. The first sale he made of a design led him to pursue work selling small designs to businesses and people around his small town of Coaldale, Alberta. He had worked for multiple different businesses, such as AirTech Heating and Air-Conditioning as well as Live Electric, in both cases working as a labourer. After his time as a labourer he moved on to carpentry at All Things Cedar in Lethbridge, Alberta. He was dissatisfied with the work he was doing, so when he got out of high school he immediately enrolled in the Multimedia Production program at the Lethbridge College.</div1><div2><img id="item2 img" src="images/hamboiiiii_web.png" alt="Hamboiiiii Logo"></div2></div>
+		Trey Tymensen is a student at the Lethbridge College in the Multimedia Production program as well as a freelance graphic designer and content creator, and has been creating content and designs for around 7 years. The first sale he made of a design led him to pursue work selling small designs to businesses and people around his small town of Coaldale, Alberta. He had worked for multiple different businesses, such as AirTech Heating and Air-Conditioning as well as Live Electric, in both cases working as a labourer. After his time as a labourer he moved on to carpentry at All Things Cedar in Lethbridge, Alberta. He was dissatisfied with the work he was doing, so when he got out of high school he immediately enrolled in the Multimedia Production program at the Lethbridge College.</div1><div3 id="item2"><img src="images/hamboiiiii_web.png" alt="Hamboiiiii Logo"></div3></div>
 	</p>
-	<p><div class="flex-container"><div2 id="item3">
-		<img src="images/scream_web.jpg" alt="Screaming"></div2><div1 id="item4">He started high school in 2018, and had ended up creating a few designs for the school such as coach uniforms, advertisements for events and services, as well as the 2021 graduation program. He graduated with honours the same year he designed the graduation program, and had also won the Personality Award as well as the Billy Derochie Memorial Scholarship. He also started at the Lethbridge College that year as well, and has been studying there since.</div1></div>
+	<p><div class="flex-container"><div3 id="item3">
+		<img src="images/fresh_breakfast_web.png" alt="R.I.P. Fresh Breakfast"></div3><div1 id="item4">He started high school in 2018, and had ended up creating a few designs for the school such as coach uniforms, advertisements for events and services, as well as the 2021 graduation program. He graduated with honours the same year he designed the graduation program, and had also won the Personality Award as well as the Billy Derochie Memorial Scholarship. He also started at the Lethbridge College that year as well, and has been studying there since.</div1></div>
 	</p>
 	<p><div class="flex-container"><div1 id="item5">
-		He had started working with Adobe products since 2013 after watching content creators play with the program for fun. His brother James Tymensen taught him the basics of colour blending, selection, spot removal, as well as other ways of messing around with the program. This led to Trey going on to practice with Photoshop exclusively for years, until he got into a video and image editing module in his middle school, St. Joseph School. He furthered his education by taking new media as well as art classes in high school. During his years of education though, he had also picked on many different Adobe programs such as Premiere, Animator (formerly Flash), and After Effects.</div1><div2 id="item6"><a href="https://www.redbubble.com/people/hamboiiiii/works/52875741-the-stretched-man?asc=u"><img src="images/umbrella_web.png" alt="The Stretched Man"></a></div2></div>
+		He had started working with Adobe products since 2013 after watching content creators play with the program for fun. His brother James Tymensen taught him the basics of colour blending, selection, spot removal, as well as other ways of messing around with the program. This led to Trey going on to practice with Photoshop exclusively for years, until he got into a video and image editing module in his middle school, St. Joseph School. He furthered his education by taking new media as well as art classes in high school. During his years of education though, he had also picked on many different Adobe programs such as Premiere, Animator (formerly Flash), and After Effects.</div1><div2 id="item6"><a target="_blank" href="https://www.redbubble.com/people/hamboiiiii/works/52875741-the-stretched-man?asc=u"><img src="images/umbrella_web.png" alt="The Stretched Man"></a></div2></div>
 	</p>
 	<p><div class="flex-container"><div2 id="item7">
-		<a href="https://www.redbubble.com/people/hamboiiiii/works/44327606-beelzebub?asc=u"><img src="images/beelzebub_web.png" alt="Beelzebub"></a></div2><div1 id="item8">Learning more about video editing had led him to amateur content creation on YouTube. He started creating videos in 2019, focusing on comedic, personality-based content. He had no specific genre he worked in, he just simply made what he wanted to make online. During high school he created quite a bit of content for his classes, as well as a food safety training video produced for his culinary class, which was repurposed as educational material for later culinary classes.</div1></div></p>
+		<a target="_blank" href="https://www.redbubble.com/people/hamboiiiii/works/44327606-beelzebub?asc=u"><img src="images/beelzebub_web.png" alt="Beelzebub"></a></div2><div1 id="item8">Learning more about video editing had led him to amateur content creation on YouTube. He started creating videos in 2019, focusing on comedic, personality-based content. He had no specific genre he worked in, he just simply made what he wanted to make online. During high school he created quite a bit of content for his classes, as well as a food safety training video produced for his culinary class, which was repurposed as educational material for later culinary classes.</div1></div></p>
 <footer>
+	<hr>
+	<p><div class="flex-container"><div4 id="item9"><button>[W.I.P.]</button></div4><div4 id="item10"><button>[W.I.P.]</button></div4><div4 id="item11"><button>[W.I.P.]</button></div4></div></p>
+	<hr>
 	<p>Created by Trey Tymensen</p>
 	<p>&copy; 2021</p>
 </footer>
