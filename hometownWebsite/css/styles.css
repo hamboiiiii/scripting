@@ -5,78 +5,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
+
 body{
 	background-image:url("../images/background.jpg");
 	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	align-items:center;
 }
 h1{
 	font-family:'lora';
-	text-shadow:0px 0px 15px;
-	text-align:center;
-	margin:50px;
+	text-align: center;
+	text-shadow:0px 0px 10px black;
+	padding:50px;
 	font-size:75px;
+	background-image:url("../images/header.jpeg");
+	color:white;
+	box-shadow: 0px 0px 20px 10px black;
+	max-width:100%;
+	background-attachment:fixed;
+}
+.subtext{
+	font-family:'lora';
+	text-shadow:0px 0px 3px black;
+
+	font-size:20px;
+	color:black;
+	background-color:#ff9900;
+	padding:20px;
+	box-shadow: 0px 0px 10px black;
 }
 p{
 	margin:100px;
+	padding:30px;
 	font-family:'Open Sans Condensed';
 	font-size:25px;
-	text-shadow: 0px 0px 5px;
-}
-img{
-	margin:50px;
-	border: solid 10px saddlebrown;
-	box-shadow: 0px 0px 15px 5px;
-}
-.bottom-text{
+	text-shadow: 0px 0px 5px black;
+	background-color:saddlebrown;
+	box-shadow: 0px 0px 20px 10px black;
 	color:white;
 }
+img{
+	border: solid 10px saddlebrown;
+	box-shadow: 0px 0px 15px 5px;
+	max-width:50%;
+	margin-left:100px
+}
+
 /*------------------------navBar -------------------*/
 nav{
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
+	margin-left:20px;
+	margin-right:20px;
 }
 nav ul {
 /*Removes dots from ul*/
 	list-style-type: none;
 
 /*Removes list indentations*/
-	margin: 0;
-	padding: 20px;
+	padding: 10px;
 /*This makes the bar go full width*/
 	overflow: hidden;
 	
 /*Background colour behind list*/
-	background-color: saddlebrown;
-
+	background-image: linear-gradient(to right, #ff9900, #ffffff);
+	box-shadow: 0px 0px 20px 10px;
 /*Sticks navBar on top of screen*/
 
 }
 nav li {
 
 /*Lines up links horizontally*/
-	float: left;
+	float:left;
 }
 nav li a:link, nav li a:visited {
 	
 /*Makes all links a box*/
-	display: block;
+	display:block;
 
 /*Text colour*/
-	color: white;
+	color:black;
+	text-shadow:0px 0px 3px;
 
 /*Text alignment*/
-	text-align: center;
+	text-align:center;
 
 /*Padding between links*/
-	padding: 14px 16px;
+	padding:14px 16px;
 
 /*Removes link highlight*/
-	text-decoration: none;
+	text-decoration:none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color on hover */
 li a:hover {
-	background-color: red;
+	background-color:brown;
 	transition:0.5s;
+	box-shadow:0px 0px 7px 5px;
 }
