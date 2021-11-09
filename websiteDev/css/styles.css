@@ -141,8 +141,39 @@ li a:hover {
 }
 
 /*----------------------------image gallery-----------------*/
+div.gallery {
+  margin: 10px;
+  border: 3px solid darkred;
+  float: left;
+  width: 180px;
+}
 
+div.gallery:hover {
+  border: 3px solid red;
+	transition:0.2s;
+}
 
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.desc:hover{
+	transition:0.2s;
+	color: red;
+	padding: 15px;
+	text-align: center;
+}
+.clearIt{
+	clear:both;
+}
 
 /*---------------------------Tables------------------------*/
-
+table, th, td {
+	border: 1px solid darkred;
+	width:100%;
+}

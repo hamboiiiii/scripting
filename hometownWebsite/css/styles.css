@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body{
+	background-image:url("../images/background.jpg");
+	background-attachment:fixed;
+}
+h1{
+	font-family:'lora';
+	text-shadow:0px 0px 15px;
+	text-align:center;
+	margin:50px;
+	font-size:75px;
+}
+p{
+	margin:100px;
+	font-family:'Open Sans Condensed';
+	font-size:25px;
+	text-shadow: 0px 0px 5px;
+}
+img{
+	margin:50px;
+	border: solid 10px saddlebrown;
+	box-shadow: 0px 0px 15px 5px;
+}
+.bottom-text{
+	color:white;
+}
+/*------------------------navBar -------------------*/
+nav{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+nav ul {
+/*Removes dots from ul*/
+	list-style-type: none;
+
+/*Removes list indentations*/
+	margin: 0;
+	padding: 20px;
+/*This makes the bar go full width*/
+	overflow: hidden;
+	
+/*Background colour behind list*/
+	background-color: saddlebrown;
+
+/*Sticks navBar on top of screen*/
+
+}
+nav li {
+
+/*Lines up links horizontally*/
+	float: left;
+}
+nav li a:link, nav li a:visited {
+	
+/*Makes all links a box*/
+	display: block;
+
+/*Text colour*/
+	color: white;
+
+/*Text alignment*/
+	text-align: center;
+
+/*Padding between links*/
+	padding: 14px 16px;
+
+/*Removes link highlight*/
+	text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: red;
+	transition:0.5s;
+}
