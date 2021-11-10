@@ -5,39 +5,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
-
+a{
+	text-decoration-line:none;
+	text-decoration:none;
+	color:inherit;
+}
+.link-overlay{
+	color:black
+}
 body{
 	background-image:url("../images/background.jpg");
 	background-attachment:fixed;
 	background-size:cover;
 	background-repeat:no-repeat;
 	align-items:center;
+	max-width:100vw;
 }
 h1{
 	font-family:'lora';
 	text-align: center;
 	text-shadow:0px 0px 10px black;
-	padding:50px;
-	font-size:75px;
+	padding:5vw;
+	font-size:10vw;
 	background-image:url("../images/header.jpeg");
 	color:white;
 	box-shadow: 0px 0px 20px 10px black;
-	max-width:100%;
+	max-width:100vw;
 	background-attachment:fixed;
 }
 .subtext{
 	font-family:'lora';
 	text-shadow:0px 0px 3px black;
-
-	font-size:20px;
+	font-size:2vw;
 	color:black;
 	background-color:#ff9900;
-	padding:20px;
+	padding:1vw;
 	box-shadow: 0px 0px 10px black;
+	margin-left:30vw;
+	margin-right:30vw;
+}
+.subtext:hover{
+	color:#ff9900;
+	background-color:black;
+	transition:0.5s
 }
 p{
-	margin:100px;
-	padding:30px;
+	margin:10vw;
+	padding:3vw;
 	font-family:'Open Sans Condensed';
 	font-size:25px;
 	text-shadow: 0px 0px 5px black;
@@ -48,8 +62,9 @@ p{
 img{
 	border: solid 10px saddlebrown;
 	box-shadow: 0px 0px 15px 5px;
-	max-width:50%;
-	margin-left:100px
+	max-width:50vw;
+	margin-left:13.75vw;
+	margin-bottom:3vw;
 }
 
 /*------------------------navBar -------------------*/
@@ -57,8 +72,8 @@ nav{
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
-	margin-left:20px;
-	margin-right:20px;
+	margin-left:10vw;
+	margin-right:10vw;
 }
 nav ul {
 /*Removes dots from ul*/
