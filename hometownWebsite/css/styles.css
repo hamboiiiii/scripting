@@ -63,7 +63,8 @@ img{
 	border: solid 10px saddlebrown;
 	box-shadow: 0px 0px 15px 5px;
 	max-width:50vw;
-	margin-left:13.75vw;
+	margin-left:10vw;
+	margin-right:5vw;
 	margin-bottom:3vw;
 }
 
@@ -116,7 +117,7 @@ nav li a:link, nav li a:visited {
 
 /* Change the link color on hover */
 li a:hover {
-	background-color:brown;
+	background-color:saddlebrown;
 	transition:0.5s;
 	box-shadow:0px 0px 7px 5px;
 }
