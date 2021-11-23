@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MadLibs!</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+	h1{
+		text-align:center;
+		font-family:'Oswald';
+		color:darkred;
+		text-shadow: 0vw 0vw 0.25vw black;
+		font-size:5vw;
+	}
+	.form{
+		padding:1vw;
+		background-color:darkred;
+		display:inline-grid;
+		text-align:center;
+		font-size:2vw;
+		font-family:'Oswald';
+		box-shadow:0vw 0vw 0.25vw 0.1vw black;
+		color:white;
+	}
+	.output-text{
+		font-size:1.5vw;
+		font-family:'Oswald';
+		font-weight:200;
+		color:darkred;
+	}
+	.output{
+		font-size:1.5vw;
+		font-family:'Oswald';
+		font-weight:200;
+		background-color:darkred;
+		color:white;
+		box-shadow:0vw 0vw 0.25vw 0.1vw black;
+		border:none;
+	}
+	body{
+		margin-top:1.5vw;
+		margin-left:5vw;
+		margin-bottom:1.5vw;
+		margin-right:5vw;
+	}
+</style>
+</head>
+<body>
+<form action="javascript:write();">
+<h1>HamLibs!</h1>
+<p class="form">
+<label for="noun">Noun:</label>
+<input type="text" id="noun1" name="noun" required autofocus><br>
+<label for="noun2">Another Noun:</label>
+<input type="text" id="noun2" name="noun2" required autofocus><br>
+<label for="noun3"><b>ANOTHER</b> Noun:</label>
+<input type="text" id="noun3" name="noun3" required autofocus><br>
+<label for="adj">Adjective:</label>
+<input type="text" id="adj1" name="adj" required autofocus><br>
+<label for="adj2">Another Adjective:</label>
+<input type="text" id="adj2" name="adj2" required autofocus><br>
+<label for="adj3"><b>ANOTHER</b> Adjective:</label>
+<input type="text" id="adj3" name="adj3" required autofocus><br>
+<label for="verb">Verb:</label>
+<input type="text" id="verb1" name="verb" required autofocus><br>
+<label for="verb2">Another Verb:</label>
+<input type="text" id="verb2" name="verb2" required autofocus><br>
+<label for="number">Number:</label>
+<input type="text" id="number1" name="number" required autofocus><br>
+<label for="nouns">Plural Noun:</label>
+<input type="text" id="nouns1" name="nouns" required autofocus><br>
+<label for="nouns2">Another Plural Noun:</label>
+<input type="text" id="nouns2" name="nouns2" required autofocus><br>
+<label for="verbs">Plural Verb:</label>
+<input type="text" id="verbs1" name="verbs" required autofocus><br>
+<input type="radio" id="mood" name="mood" value="mood">
+<label for="mood">Are You Mad like these libs? Click This if you are!</label><br>
+<div class="output-text" id="output"><u>Click <b>submit</b> to see your own trip to the store!</u></div>
+<div class="output-text" id="happyface"><b>Well are you feeling mad?</b></div>
+</p>
+<p><input class="output" type="submit" value="Submit"></p>
+<script>
+	function write(){
+		var noun1=document.getElementById('noun1').value;
+		console.log(noun1);
+		var noun2=document.getElementById('noun2').value;
+		console.log(noun2);
+		var noun3=document.getElementById('noun3').value;
+		console.log(noun3);
+		var adj1=document.getElementById('adj1').value;
+		console.log(adj1);
+		var adj2=document.getElementById('adj2').value;
+		console.log(adj2);
+		var adj3=document.getElementById('adj3').value;
+		console.log(adj3);
+		var verb1=document.getElementById('verb1').value;
+		console.log(verb1);
+		var verb2=document.getElementById('verb2').value;
+		console.log(verb2);
+		var numb1=document.getElementById('number1').value;
+		console.log(numb1);
+		var nouns1=document.getElementById('nouns1').value;
+		console.log(nouns1);
+		var nouns2=document.getElementById('nouns2').value;
+		console.log(nouns2);
+		var verbs1=document.getElementById('verbs1').value;
+		console.log(verbs1);
+		document.body.style.backgroundColor="gray";
+		document.getElementById('output').innerHTML="<p2>My "+noun1+" and I were really "+adj1+", so we walked down to the "+noun2+" after school to grab a couple "+nouns1+". It was quite "+adj2+" out, so we really needed to "+verb2+". We started down "+noun1+" Street and realized this might be more of a "+adj3+" trip than we anticipated, as a cluster of "+nouns2+" was blocking the entire intersection and sidewalk. We had no clue why the herd of "+nouns2+" was there, but it was. We decided to detour down "+noun1+" Avenue and make a right down "+noun3+" Street. This road had no "+nouns2+" in the way to the "+noun2+", so we ran as "+adj1+" as we could down the sidewalk. The "+noun1+" outside was causing us to sweat profusely as the need for "+noun2+" grew in our minds. As the urgency of the "+noun2+" grew, so did our speed. Our feet "+verb1+" against the ground as the "+noun1+" grew closer, and we knew we had "+verb2+" in our task. As soon as we stepped onto the property, our eyes grew "+adj2+" as we saw the most "+adj1+" thing we had ever seen. A sign that read three words: FREE "+nouns1+" INSIDE. We almost "+verb2+" the door as we rush inside. The "+noun3+" behind the counter "+verbs1+" us at the door. We don’t even "+verb1+" at him as we "+verb1+" toward the "+noun1+" machine. We both grab our cups and fill them with "+noun1+", and we take the cups to the counter. The "+noun3+" rings up our order, and charges "+numb1+" dollars for them. We collectively lose our "+nouns1+" as we explain the sign out front that says “FREE "+nouns1+" INSIDE,” and they immediately turn "+adj2+" as the "+noun3+" corrects their mistake and rings us up. We take our free "+nouns1+" outside, and walk down the street, and make our way down to the bench in "+noun1+" park. We sit down and start drinking our "+nouns1+" and start "+verb1+". We then were approached by a group of "+nouns2+", who started to "+verb2+" us so we would give up our "+nouns1+". My "+noun1+" and I proceeded to "+adj1+" so hard that literally every "+noun1+" in their group simply started "+verb1+". They apologize, and "+verb1+" as fast away from us as I have ever seen someone go. I remember this day every time there is a "+adj2+" "+noun1+" day out, I look outside and "+verb2+" to myself.<p2><br><img src='happy.jpeg' alt='Happy Face'>";
+	}
+</script>
+	</form>
+</body>
+</html>

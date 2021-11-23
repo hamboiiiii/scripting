@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS Syntax</title>
+
+	<style>
+		#box1, #box2, #box3{
+			border:thin solid black;
+			height:200px;
+			width:400px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<h1>Learning Javascript</h1>
+	
+	<!--Content divs we will mnipulate with JS-->
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<div id="box3"></div>
+	
+	
+<!--All Javascript must go inside script tags at the end of the body!-->
+<script>
+		
+/*Step 1 - Simple Varibales*/
+var num1=24;
+var num2=25;
+console.log("My number is "+num1);
+
+var score=num1+num2;
+console.log("Your score is "+score)
+
+/*Step 2 - Pointer to something on the page, and put our score variable into it*/
+
+//target a div on the page
+var box1=document.getElementById('box1');
+
+//Change the HTML within the div to our score
+box1.innerHTML=score;
+
+/*Pointer, fill it with content, change the style*/
+
+var box2=document.getElementById('box2');
+
+//Put some text in there
+box2.innerHTML="I am so tired lol!";
+
+//Change the CSS of box2
+box2.style.color="red";
+box2.style.boxShadow="0px 0px 15px 3px black";
+box2.style.backgroundColor="maroon";
+
+/*Step 3 - Simple Logic*/
+
+var box3=document.getElementById('box3');
+
+//A single equal assigns.
+var name="Trey";
+
+//Double equal sign tests if things equal.
+if(name=="Trey"){
+	box3.innerHTML="Minecraft Steve is two meters tall. Like his fists are literally a foot wide. This guy can't be real..."
+}else{
+	box3.innerHTML="Only if you have the right name, then can you gain the forbidden knowledge."
+}
+
+</script>
+</body>
+</html>
