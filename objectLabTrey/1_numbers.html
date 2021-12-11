@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Math Lab</title>
+</head>
+
+<body>
+	
+	<h1>Math Object</h1>
+	
+	<p>Click the button to learn more about math!</p>
+	
+	<div id="output"></div>
+	
+	<button id="btn1">Click Me!</button>
+	
+	<script>
+	//This is the code that listens for the button click and then calls a function.
+	//Parameter: Which event are you listening for, function call.
+	document.getElementById('btn1').addEventListener('click', mathStuff);
+	
+	
+	function mathStuff(){
+		console.log('Yay, it is working.');
+		
+		//Pointer to the div.
+		var output=document.getElementById('output');
+		
+		//Pre-built method to find Pi.
+		output.innerHTML="Pi is: "+Math.PI;
+		
+		//Square roots
+		output.innerHTML+=" <br>The square root of 16 is: "+Math.sqrt(16)
+		
+		//Rounding numbers.
+		output.innerHTML+="<br>Rounding up 4.53 results in: "+Math.ceil(4.53);
+		
+		//Rounding numbers DOWN.
+		output.innerHTML+="<br>Rounding down 6.84 results in: "+Math.floor(6.84);
+		
+		//Random numbers
+		output.innerHTML+="<br>Create a random number between 0 and 1: "+Math.random();
+		
+		output.innerHTML+="<br>Create a random number between 1 and 10: "+Math.ceil(Math.random()*10);
+	}
+		
+	</script>
+</body>
+</html>

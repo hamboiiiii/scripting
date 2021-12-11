@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hamboiiiii's Motivational Clock!</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+	
+	h1{
+		font-family:'Oswald';
+		font-size:5vw;
+		text-align:center;
+		text-shadow:0px 0px 5px black;
+		background-color:darkred;
+		color:white;
+		box-shadow:0px 0px 10px 5px black;
+		margin-left:8vw;
+		margin-right:8vw;
+	}
+	
+	p{
+		font-family:'Roboto Mono';
+		text-align:center;
+		font-size:1.25vw;
+		text-shadow:0px 0px 10px black;
+		color:white;
+	}
+	
+	#output{
+		background-color:darkred;
+		color:white;
+		font-family:'Oswald';
+		font-size:1.25vw;
+		text-align:center;
+		padding-bottom:2vw;
+		padding-top:2vw;
+		margin-left:22vw;
+		margin-right:22vw;
+		box-shadow:0px 0px 10px 5px black;
+		text-shadow:0px 0px 5px black;
+	}
+	
+	body{
+		text-align:center;
+		background-image:url("images/treyBackground.gif");
+		background-size:cover;
+	}
+	
+	button{
+		border:none;
+		background-color:darkred;
+		padding:1vw;
+		font-family:'Oswald';
+		font-size:1vw;
+		color:white;
+		box-shadow:0px 0px 10px 5px black;
+		text-shadow:0px 0px 5px black;
+	}
+	
+	button:hover{
+		background-color:white;
+		color:darkred;
+		transition:0.5s;
+		
+	}
+</style>
+
+
+</head>
+
+<body>
+		
+	<h1>Hamboiiiii's Motivational Calendar!</h1>
+	
+	<p>Push the button to get a push yourself!</p>
+	
+      <div id="output"></div><br>
+	
+	<button id="btn1">Push me!</button>
+	
+	<script>
+
+	document.getElementById('btn1').addEventListener('click', dates);
+	
+	function dates(){
+		console.log('I am so tired...');
+		
+		var output=document.getElementById('output')
+		
+		var d=new Date();
+		
+		var days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+		
+		var hours=d.getHours();
+		
+		if (hours>12){
+			hours=hours-12;
+		}
+		
+		var minutes=d.getMinutes();
+		
+		if (minutes<10){
+			minutes="0"+minutes;
+		}
+		
+		var seconds=d.getSeconds();
+		
+		if (seconds<10){
+			seconds="0"+seconds;
+		}
+		
+		output.innerHTML="What day of the week you have made it to: "+days[d.getDay()];
+		
+		output.innerHTML+="<br>How many days you have powered through this month: "+d.getDate();
+		
+		output.innerHTML+="<br>What year you've conquered so far: "+d.getFullYear();
+		
+		output.innerHTML+="<br>What time you have have worked extremely hard to get to: "+hours+ ":" +minutes+ ":" +seconds;
+		
+		var months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		
+		output.innerHTML+="<br>You've made it to "+months[d.getMonth()]+", and honestly you should just be proud of yourself!"
+		
+		var d=setInterval(dates,1000);
+		
+	}
+	
+	</script>
+	
+</body>
+</html>

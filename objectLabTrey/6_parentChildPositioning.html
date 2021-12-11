@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parent Child Positioning</title>
+	
+	<style>
+		
+		#parent{
+			background-color:aqua;
+			width:960px;
+			height:600px;
+			margin:auto;
+		}
+		
+		.child{
+			height:50px;
+			width:50px;
+			position:relative;
+		}
+		
+		#geoff{
+			background-color:#CD4805;
+			left:200px;
+			top:100px;
+		}
+		
+		#janet{
+			background-color:#00FF2C;
+			left:300px;
+			top:200px;
+		}
+		
+		#bill{
+			background-color:#0005FF;
+			left:400px;
+			top:300px;
+		}
+	
+	</style>
+
+
+
+
+
+</head>
+
+<body>
+	
+	<h1>Relative Positioning</h1>
+	
+	<!-- The Parent - Outside of the div. -->
+		<div id="parent">
+	<!-- The Child - Inside parent div. -->		
+	<div id="geoff" class="child">Geoff</div>
+	<div id="janet" class="child">Janet</div>
+	<div id="bill" class="child">Bill</div>
+			
+	</div>
+</body>
+</html>

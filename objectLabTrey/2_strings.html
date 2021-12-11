@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Strings Lab</title>
+</head>
+
+<body>
+		
+	<h1>String Object</h1>
+	
+	<p>Click the button to learn more about strings!</p>
+	
+	<div id="output"></div>
+	
+	<button id="btn1">Click Me!</button>
+	
+	<script>
+		//This is the code that listens for the button click and then calls a function.
+	//Parameter: Which event are you listening for, function call.
+	document.getElementById('btn1').addEventListener('click', stringStuff);
+	
+	function stringStuff(){
+		console.log('Beans on toast.');
+		
+		//Pointer to the div.
+		var output=document.getElementById('output');
+		
+		//Creating a variable that holds a string.
+		var myWord="Supercalifragilisticexpialidocious";
+		
+		var mySentence="Another fun tongue twister is Irish wrist watch.";
+		
+		//Check to see if the word has a particular letter.
+		output.innerHTML="Does my word start with an S? "+myWord.startsWith('S');
+		
+		output.innerHTML+="<br>Does my sentence start with 'Another'? "+mySentence.startsWith('Another');
+		
+		output.innerHTML+="<br>Change myWord to lowercase: "+myWord.toLowerCase();
+		
+		output.innerHTML+="<br>Change myWord to uppercase: "+myWord.toUpperCase();
+		
+	}
+	</script>
+</body>
+</html>

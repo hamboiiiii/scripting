@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Set Interval</title>
+</head>
+
+<body>
+	<h1>Timer</h1>
+	
+	<div id="output"></div><br>
+	
+	<button id="stopBtn">STOP THE TIMER!</button>
+	
+<script>
+	//Var that will hold number - sets an initial value.
+	var num=0;
+	//Pointer to the div.
+	var output=document.getElementById('output');
+	
+	//Create Function - Timer
+	function timer(){
+		//Add one to our variable.
+		num++;
+		//Send it to the output.
+		output.innerHTML=num;
+	}
+	
+	timer();
+	//This method lets us call functions at a predetermined time.
+	//Parameter - Which function, how often?
+	var myInt=setInterval(timer,1000);
+	
+	//Added an event listener - click.
+document.getElementById('stopBtn').addEventListener('click', stopTimer);
+	
+	function stopTimer(){
+		console.log('Stop!');
+		clearInterval(myInt);
+	}
+	
+</script>
+</body>
+</html>
